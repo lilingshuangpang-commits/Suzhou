@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Suzhou Garden Details</title>
+<meta charset="utf-8">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Palatino Linotype', 'Book Antiqua', serif;
+  background: #f0f4f8;
+}
+.floating-nav {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(30,58,95,0.95);
+  padding: 15px 40px;
+  border-radius: 30px;
+  z-index: 100;
+  display: flex;
+  gap: 40px;
+}
+.floating-nav a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+.floating-nav a:hover,
+.floating-nav a.active {
+  color: #87ceeb;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 120px 40px 60px;
+}
+.garden-detail {
+  background: white;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.garden-header {
+  position: relative;
+  height: 400px;
+}
+.garden-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.garden-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(transparent, rgba(30,58,95,0.9));
+}
+.header-text {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  right: 40px;
+  z-index: 1;
+  color: white;
+}
+.header-text h2 {
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.header-text .tag {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #87ceeb;
+  border: 1px solid #87ceeb;
+  padding: 5px 15px;
+  display: inline-block;
+}
+.garden-body {
+  padding: 40px;
+}
+.garden-body p {
+  color: #555;
+  line-height: 2;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.garden-body p:first-child::first-letter {
+  font-size: 48px;
+  float: left;
+  line-height: 1;
+  padding-right: 15px;
+  color: #1e3a5f;
+}
+.quote {
+  border-left: 3px solid #87ceeb;
+  padding-left: 30px;
+  margin: 30px 0;
+  color: #1e3a5f;
+  font-style: italic;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+  <nav class="floating-nav">
+    <a href="index.html">HOME</a>
+    <a href="gardens.html">GARDENS</a>
+    <a href="#" class="active">DETAILS</a>
+  </nav>
+
+  <main class="container">
+    <article class="garden-detail">
+      <div class="garden-header">
+        <img src="images/master-preview.jpeg" alt="Humble Administrator's Garden">
+        <div class="header-text">
+          <span class="tag">UNESCO WORLD HERITAGE</span>
+          <h2>Humble Administrator's Garden</h2>
+        </div>
+      </div>
+      <div class="garden-body">
+        <p>The Humble Administrator's Garden, or Zhuozheng Yuan, stands as the crown jewel of Suzhou's classical gardens. Created in 1509 during the Ming Dynasty by Wang Xianchen, a retired government official, its name reflects the owner's humble intention to tend a garden rather than pursue political ambition.</p>
+        
+        <div class="quote">"The garden is built around water, with mountains and buildings arranged to create a miniature universe."</div>
+        
+        <p>Covering 52,000 square meters, it is the largest garden in Suzhou. The design centers on a large central pond, surrounded by pavilions, corridors, and bridges. The garden is divided into three sections: the eastern section features open lawns and pine forests, the central section contains the main buildings and water features, while the western section offers a more intimate, natural setting.</p>
+        
+        <p>Every window frames a different view, every corridor leads to a new discovery. The garden embodies the Chinese philosophy that the finite can contain the infinite, and that nature and architecture should exist in perfect harmony.</p>
+      </div>
+    </article>
+
+    <article class="garden-detail">
+      <div class="garden-header">
+        <img src="images/lingering-preview.jpeg" alt="Lingering Garden">
+        <div class="header-text">
+          <span class="tag">QING DYNASTY MASTERPIECE</span>
+          <h2>Lingering Garden</h2>
+        </div>
+      </div>
+      <div class="garden-body">
+        <p>Lingering Garden, or Liu Yuan, is celebrated for its exquisite architectural details and the masterful use of space. Built in 1593 and rebuilt in the 19th century, it represents the pinnacle of Qing Dynasty garden design.</p>
+        
+        <p>The garden is famous for its four distinct areas, each showcasing a different season. The central area features a large lake and artificial mountain, while the eastern area is dominated by buildings and courtyards. The northern area presents a pastoral landscape, and the western area feels like a wild forest.</p>
+        
+        <p>What makes Lingering Garden truly special is its collection of Taihu rocks, particularly the Cloud-Capped Peak, one of the four famous rocks in Jiangnan. The garden's corridors and windows create an ever-changing sequence of framed views, each one a living painting.</p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
